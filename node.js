@@ -20,23 +20,43 @@ axios.get("https://api.institutoalfa.org/api/songs")
 
 function CrearComponenteCancion(songs) {
     const div = document.createElement('div')
-    div.setAttribute('class', 'lulo')
+    div.setAttribute('class', 'card')
 
     div.innerHTML = `
-        <img src="" alt="">
+        <img src="${songs.image.url}" alt="">
     
-        <div>
-          <h3>${songs.title}</h3>
-           <p>${songs.author}</p>
-      </div>
+        <h2>${songs.title}</h2>
+         <p>${songs.author}</p>
+        
           
     `
+    div.addEventListener("click", function() {
+        console.log(songs.title)
+        // esto va pasar cuando el usuario haga click
+        document.getElementById("audio")
+            .setAttribute("src", songs.audio.url)
+
+        document.getElementById("hola")
+        .setAttribute("src",songs.image.url )
+
+
+        // document.getElementById("title").innerHTML = songs.title
+    })
 
     return div
 }
 
-console.log(CrearComponenteCancion(cancion))
 
-document.getElementById('targetas').appendChild(CrearComponenteCancion(cancion))
+
+const audio = document.getElementById("audio")
+
+document.getElementById("pausa").addEventListener("click", function(){
+    console.log("click en pausa")
+    if (audio.paused) {
+        audio.play()
+    } else {
+        audio.pause()
+    }
+})
 
 

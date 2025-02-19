@@ -44,9 +44,11 @@ body {
 
 .footer {
     width: 100%;
-    height: 100px;
+    padding: 20px;
     background-color: #1C0303;
     box-shadow: -1px -2px 29px -4px rgba(252, 252, 252, 1);
+    display: flex;
+    align-items: center;
 
 }
 
@@ -72,6 +74,11 @@ h1 {
     justify-content: center;
     gap: 400px;
     flex-direction: row;
+}
+
+.hijo-footer img {
+    height: 100px;
+    width: 100px;
 }
 
 .hijo-footer {
@@ -107,6 +114,11 @@ h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     /* Animación suave */
    
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
 }
 
 .card:active {

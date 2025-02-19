@@ -6,8 +6,8 @@
 body {
     background-color: #000000;
     color: white;
-    
-     
+
+
 }
 
 .sidebar {
@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     gap: 40px;
     /* border-radius: 15px; */
-    box-shadow: -1px -2px 29px -4px rgba(252,252,252,1);
+    box-shadow: -1px -2px 29px -4px rgba(252, 252, 252, 1);
 
 }
 
@@ -33,7 +33,7 @@ body {
     margin-top: 15px;
     display: flex;
     gap: 20px;
-    
+
 }
 
 .sidebar-padre {
@@ -46,7 +46,7 @@ body {
     width: 100%;
     height: 100px;
     background-color: #1C0303;
-    box-shadow: -1px -2px 29px -4px rgba(252,252,252,1);
+    box-shadow: -1px -2px 29px -4px rgba(252, 252, 252, 1);
 
 }
 
@@ -55,17 +55,16 @@ body {
     flex-wrap: wrap;
     gap: 60px;
     align-items: flex-start;
-    height: 100px;
-    width: 100px;
+
 
 }
 
 h1 {
     display: flex;
     justify-content: center;
-    
+
     width: 100px;
-    
+
 }
 
 .footer {
@@ -82,24 +81,37 @@ h1 {
 
 
 
-.sidebar-hijo p, .sidebar-hijo1 p {
-    cursor: pointer; /* Cambia el cursor a una mano */
-    transition: all 0.3s ease; /* Agrega una transición suave */
+.sidebar-hijo p,
+.sidebar-hijo1 p {
+    cursor: pointer;
+    /* Cambia el cursor a una mano */
+    transition: all 0.3s ease;
+    /* Agrega una transición suave */
 }
 
 
-.sidebar-hijo p:active, .sidebar-hijo1 p:active {
-    color: #1DB954; /* Cambia el color (verde Spotify) */
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño */  }
+.sidebar-hijo p:active,
+.sidebar-hijo1 p:active {
+    color: #1DB954;
+    /* Cambia el color (verde Spotify) */
+    transform: scale(1.1);
+    /* Aumenta ligeramente el tamaño */
+    
+}
 
 
-    .card {
-        cursor: pointer; /* Cambia el cursor a una mano */
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
-    }
-    
-    .card:active {
-        transform: scale(0.95); /* Hace un efecto de "presión" */
-        box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.5); /* Brillo verde al hacer clic */
-    }
-    
+
+.card {
+    cursor: pointer;
+    /* Cambia el cursor a una mano */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animación suave */
+   
+}
+
+.card:active {
+    transform: scale(0.95);
+    /* Hace un efecto de "presión" */
+    box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.5);
+    /* Brillo verde al hacer clic */
+}
